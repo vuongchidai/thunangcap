@@ -1,0 +1,73 @@
+<!-- Code 1: thongbaonangcap.html (Thông báo nâng cấp hệ thống) -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Báo Nâng Cấp Hệ Thống</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffffff);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .notification {
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            animation: fadeInUp 1s ease;
+        }
+        .notification h1 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        .notification p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .notification .time {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+        .notification img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="notification">
+        <h1>🚧 Hệ Thống Đang Nâng Cấp</h1>
+        <p>Chúng tôi đang thực hiện nâng cấp hệ thống để phục vụ bạn tốt hơn. Thời gian dự kiến:</p>
+        <p class="time">Từ 22:00 ngày 10/07 đến 06:00 ngày 11/07</p>
+        <p>Rất mong bạn thông cảm vì sự bất tiện này. Xin cảm ơn sự ủng hộ của bạn!</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/595/595067.png" alt="Maintenance Icon">
+    </div>
+</body>
+</html>
